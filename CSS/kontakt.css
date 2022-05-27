@@ -1,3 +1,58 @@
-h1 {
-  color: greenyellow;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+}
+
+@media (min-width: 601px) {
+  section {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+section {
+  display: grid;
+  gap: 3rem;
+  align-items: start;
+}
+
+.section_header {
+  display: grid;
+  gap: 1rem;
+}
+
+.section_header h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+.section_header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+form {
+  padding: 2rem;
+  background: hsl(264 30% 96%);
+  border-radius: 8px;
+}
+
+.form-felt {
+  display: grid;
+  gap: 3px;
+  margin: 0.5rem;
 }

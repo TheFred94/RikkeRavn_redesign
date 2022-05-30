@@ -7,20 +7,40 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/kontakt.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/vpi7jeq.css" />
+
     <title>kontakt</title>
   </head>
 
   <body>
     <header>
-      <nav>
+      <div>
         <div class="logo">
-          <h4>Rikke Ravn Design</h4>
+          <a href="index.html"><h1>Rikke Ravn Design</h1></a>
+
+          <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
+      </div>
+      <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Forside</a></li>
-          <li><a href="om.html">Om</a></li>
-          <li><a href="showroom.html">Showroom</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li>
+            <a href="om.html"><h6>OM</h6></a>
+          </li>
+          <li>
+            <a href="showroom.html"><h6>SHOWROOM</h6></a>
+          </li>
+          <li>
+            <a href="kontakt.html"><h6>KONTAKT</h6></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -28,29 +48,32 @@
     <main>
       <section>
         <div class="section_header">
-          <h2>Kontakt mig</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem perspiciatis dolore doloribus quis temporibus laborum ullam consequuntur, qui minima at blanditiis excepturi dolorem.</p>
+          <h1>Kontakt info</h1>
+          <p>
+            Ønsker du at få levet et gammelt smykke du som aldrig bruger, eller et som skal justeres lidt for at få det rette udtryk. Eller måske skal det smeltes helt om til noget nyt? <br />
+            <br />
+            Så er du velkommen til at kontakt mig via e-mail eller giv mig et ring på 22-85-74-97 og så kan vi sammen finde ud af et design, du vil blive glad for.
+          </p>
         </div>
 
         <form action="tak.html" name="kontakt" netlify>
-          <!-- Formular-indhold -->
           <div class="form-felt">
             <label>
               Fulde navn
-              <input placeholder="fx Jonas Hvass" type="text" name="fnavn" required />
+              <input placeholder="Fx. Jonas Hvass" type="text" name="fnavn" required />
             </label>
           </div>
 
           <div class="form-felt">
             <label>
               E-mail
-              <input placeholder="Fx jhass06@gmail.com" type="email" name="email" required />
+              <input placeholder="Fx. jhvass06@gmail.com" type="email" name="email" required />
             </label>
           </div>
 
           <div class="form-felt">
             <label>
-              Besked (valgfri)
+              Besked
               <textarea name="besked" rows="5"></textarea>
             </label>
           </div>
@@ -62,5 +85,6 @@
 
     <script src="Javascript/kontakt.js"></script>
     <script src="Javascript/generel.js"></script>
+    <script src="Javascript/login.js"></script> 
   </body>
 </html>

@@ -1,0 +1,211 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font styling */
+p {
+    max-width: 60ch;
+}
+
+h1 {
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+}
+h3 {
+    font-family:"brandon-grotesque";
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+h4{
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #939393;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;  
+}
+h6 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+
+
+
+}
+
+/* Styling af navigationbar og logo */
+
+.nav-links {
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 20px 60px 0px 60px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #5D7B98;
+}
+
+.logo {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding-top: 20px;
+}
+
+.logo:hover {
+    color: #117cdf;
+}
+
+
+/* Burger Menu */
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(14, 13, 13);
+}
+
+@media(max-width:600px){
+    .burger{
+        display: block;
+    }
+
+    /* Få den midterste block i burger menuen til at forsvinde */
+
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    /* Få den øverste til at dreje sig, så den og den nederste kan forme et kryds */
+    .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+     /* en fixed position gør at menuen bliver på skærmen idet man scroller ned, en left -100% gør at vi ikke kan se den */
+    .nav-links{
+        position: fixed;
+        left:-100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: blue;
+        width: 100%;
+        text-align: center;
+        transition: 0.1s;
+
+    }
+
+    /* vi vil ikke have linksene tæt på hinanden */
+
+    .nav-links li {
+        margin: 16px 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+}
+
+
+
+/* Footer design */
+
+footer {
+    background: #272727;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    
+}
+
+.footer-container {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: #939393;
+    margin: 0px 70px 0px 0px;
+
+}
+
+.col {
+    display: inline-block;
+    padding: 20px 60px 20px 60px;
+    text-align: center;
+}
+
+
+/* CSS til instagram ikonet */
+
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+
+  
+  /* hover effekt bliver lagt på */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #939393;
+    color: white;
+  }
+
+
+

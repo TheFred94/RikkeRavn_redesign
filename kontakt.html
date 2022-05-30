@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,12 +7,84 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/kontakt.css" />
-    <title>forside</title>
-  </head>
-  <body>
 
-  <script src="Javascript/kontakt.js"></script>
-  <script src="Javascript/generel.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/vpi7jeq.css" />
+
+    <title>kontakt</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div class="logo">
+          <a href="index.html"><h1>Rikke Ravn Design</h1></a>
+
+          <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="om.html"><h6>OM</h6></a>
+          </li>
+          <li>
+            <a href="showroom.html"><h6>SHOWROOM</h6></a>
+          </li>
+          <li>
+            <a href="kontakt.html"><h6>KONTAKT</h6></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section_header">
+          <h1>Kontakt info</h1>
+          <p>
+            Ønsker du at få levet et gammelt smykke du som aldrig bruger, eller et som skal justeres lidt for at få det rette udtryk. Eller måske skal det smeltes helt om til noget nyt? <br />
+            <br />
+            Så er du velkommen til at kontakt mig via e-mail eller giv mig et ring på 22-85-74-97 og så kan vi sammen finde ud af et design, du vil blive glad for.
+          </p>
+        </div>
+
+        <form action="tak.html" name="kontakt" netlify>
+          <div class="form-felt">
+            <label>
+              Fulde navn
+              <input placeholder="Fx. Jonas Hvass" type="text" name="fnavn" required />
+            </label>
+          </div>
+
+          <div class="form-felt">
+            <label>
+              E-mail
+              <input placeholder="Fx. jhvass06@gmail.com" type="email" name="email" required />
+            </label>
+          </div>
+
+          <div class="form-felt">
+            <label>
+              Besked
+              <textarea name="besked" rows="5"></textarea>
+            </label>
+          </div>
+
+          <button type="submit">Indsend</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="Javascript/kontakt.js"></script>
+    <script src="Javascript/generel.js"></script>
+    <script src="Javascript/login.js"></script> 
   </body>
-  
 </html>

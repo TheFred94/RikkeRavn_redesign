@@ -37,6 +37,7 @@ section {
 .section_header h1 {
   line-height: 1.25;
   margin-bottom: 0;
+  border-bottom: 4px solid rgb(0, 0, 0);
 }
 
 .section_header p {

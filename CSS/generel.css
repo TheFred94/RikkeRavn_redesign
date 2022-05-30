@@ -1,12 +1,22 @@
 * {
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0.2rem 0;
 }
 
 /* Font styling */
+p {
+  max-width: 60ch;
+}
 
 h1 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
   font-size: 45px;
   letter-spacing: 1.5px;
   color: black;
@@ -17,6 +27,14 @@ h3 {
   font-family: "brandon-grotesque";
   font-size: 18px;
   letter-spacing: 0px;
+}
+
+h4 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h5 {

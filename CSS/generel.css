@@ -137,7 +137,7 @@ h6 {
 
 footer {
     background: #272727;
-    line-height: 20px;
+    line-height: 50px;
     display: block;
     text-align: center;
     
@@ -153,9 +153,36 @@ footer {
 
 .col {
     display: inline-block;
-    padding: 20px 60px 0px 60px;
+    padding: 20px 60px 20px 60px;
     text-align: center;
 }
+
+
+/* CSS til instagram ikonet */
+
+.fa {
+    padding: 10px;
+    font-size: 100px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+
+  
+  /* hover effekt bliver lagt på */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #939393;
+    color: white;
+  }
 
 
 

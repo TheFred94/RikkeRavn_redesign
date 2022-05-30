@@ -31,8 +31,11 @@ img {
   grid-column: 1 / span 2;
   grid-row: 1 / 5;
   align-self: center;
-  max-width: 70%;
+  max-width: 500px;
   padding-left: 7rem;
+  filter: brightness(80%);
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 .grid_1 {

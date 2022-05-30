@@ -135,15 +135,18 @@ footer {
 }
 
 .footer-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: #939393;
+    text-decoration: none;
 
 }
 
-.col{
-    float: left;
+.col {
+    display: inline-block;
+    padding: 20px 60px 0px 60px;
+    text-align: center;
 }
 
 

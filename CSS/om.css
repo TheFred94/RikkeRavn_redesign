@@ -15,6 +15,24 @@ img {
   display: block;
 }
 
+button {
+  border: none;
+  color: white;
+  background-color: brown;
+  padding: 15px 32px;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 650ms;
+  border-radius: 25px;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(179, 99, 99);
+  transform: scale(1.05);
+  transition: transform 650ms;
+}
+
 .om_tekst {
   grid-row: 1 / span 1;
 }

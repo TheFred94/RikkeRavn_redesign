@@ -1,5 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
+    
+}
+
+.grid_3 {
+  display: grid;
+}
+
+.grid_3_1 {
+  display: grid;
 }
 .grid_3_2 {
     display: grid;
@@ -43,6 +53,37 @@ img {
 
 .overflow {
     overflow: hidden;
+}
+
+
+/* Iphone responsiv */
+@media(max-width:375px) {
+  .grid_3_1{
+    display: none;
+  }
+  .grid_3_2{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .grid_3_3{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+
+/* Ipad responsiv */
+@media(max-width:1000px) {
+  .grid_3_2{
+    display: flex;
+    margin: 20px 10px 10px 10px;
+  }
+  .grid_3_3{
+    display: flex;
+    margin: 20px 10px 10px 10px;
+  }
 }
 
 

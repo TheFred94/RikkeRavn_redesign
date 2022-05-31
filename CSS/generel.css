@@ -47,7 +47,7 @@ h4{
 h5 {
   font-size: 14px;
   letter-spacing: 1.5px;
-  color: #939393;
+  color: white;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -172,26 +172,45 @@ h6 {
 /* Footer design */
 
 footer {
-  background: #272727;
-  line-height: 30px;
-  display: block;
+  background: #948D85;
   text-align: center;
   align-self: end;
+  display: grid;
+    grid-column: span 2;
+    height: 80px;
 }
 
-.footer-container {
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  color: #939393;
-  margin: 0px 70px 0px 0px;
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.col {
-  display: inline-block;
-  padding: 20px 60px 20px 60px;
-  text-align: center;
+
+.footer-navn {
+  display: flex;
+  width: 75px;
+  height: 30px;
+    transition: transform 500ms;
+    margin-top: 20px;
+    margin-left: 30px;
 }
+.footer-insta {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  transition: transform 500ms;
+  margin-top: 20px;
+}
+
+.footer-telefon {
+  display: flex;
+  width: 115px;
+    height: 30px;
+    transition: transform 500ms;
+    margin-top: 20px;
+}
+
 
   /* Burger menu */
 
@@ -215,7 +234,7 @@ footer {
       border-radius: 2px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background-color: #272727;
+      background-color: black;
   }
 
   /* Styler burger i mindre vindue */
@@ -301,6 +320,6 @@ footer {
 
 /* Instagram */
 .fa-instagram {
-  background: #939393;
-  color: white;
+  background: white;
+  color: #948D85;
 }

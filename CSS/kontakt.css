@@ -118,8 +118,16 @@ button:hover {
   transform: scale(1.05);
 }
 
-.nav-links {
-  top: 58px;
+.tak {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+  text-align: center;
+  padding: 9rem;
+  background: #ece1cb;
+  border-radius: 8px;
+  font-size: 6rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -133,6 +141,18 @@ button:hover {
 
   .container {
     padding: 25px 30px;
+  }
+
+  .tak {
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    margin-block: 3rem;
+    text-align: center;
+    padding: 8rem;
+    background: #ece1cb;
+    border-radius: 8px;
+    font-size: 2rem;
   }
 }
 

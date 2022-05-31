@@ -199,6 +199,9 @@ footer {
   transition: transform 500ms;
   margin-top: 20px;
 }
+.footer-insta:hover {
+  transform: scale(1.1);
+}
 
 .footer-telefon {
   display: flex;

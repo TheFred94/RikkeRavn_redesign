@@ -1,40 +1,45 @@
 * {
-  text-decoration: none;
-  margin: 0;
-  padding: 0 0 0.2rem 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 0 0.2rem 0;
+    box-sizing: border-box;
 }
 
 /* Font styling */
 p {
-  max-width: 60ch;
+    max-width: 60ch;
+    /* font-family: source sans pro;   Kan ikke komme ind på adobe, så kan ikke vedhæfte endnu. */
 }
 
 h1 {
-  font-size: 45px;
-  letter-spacing: 1.5px;
-  color: black;
-  font-weight: 700;
-  font-style: normal;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    font-family: futura-pt, sans-serif;
 }
-h2 {
-  font-size: 45px;
-  letter-spacing: 1.5px;
-  color: black;
-  font-weight: 700;
-  font-style: normal;
+h2{
+    font-family: futura-pt, sans-serif;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
 }
 h3 {
-  font-family: "brandon-grotesque";
-  font-size: 18px;
-  letter-spacing: 0px;
+    font-family: futura-pt, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
 }
 
-h4 {
-  font-size: 45px;
-  letter-spacing: 1.5px;
-  color: black;
-  font-weight: 700;
-  font-style: normal;
+h4{
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    font-family: futura-pt, sans-serif;
 }
 
 h5 {
@@ -87,6 +92,22 @@ h6 {
 .logo:hover {
   color: #117cdf;
 }
+.logo a {
+
+    display: inline-block;
+    margin:0 auto;
+    text-align:center
+
+}
+
+
+
+.navbar {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+
 
 /* Burger Menu */
 
@@ -170,17 +191,106 @@ footer {
   text-align: center;
 }
 
+  /* Burger menu */
+
+  header {
+      background-color: white;
+  }
+
+
+  .burger{
+      display: none;
+      cursor: pointer;
+    
+  }
+
+  /* Styler selve burgeren */
+
+  .bar {
+      display: block;
+      width: 25px;
+      height: 2px;
+      border-radius: 2px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: #272727;
+  }
+
+  /* Styler burger i mindre vindue */
+
+  @media(max-width:768px) {
+      .burger{
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: auto;
+        left: 8px;
+        padding: 0;
+        border: 0;
+        min-width: 20px;
+        min-height: 20px;
+        background: 0 0;
+        overflow: visible;
+        z-index: 9;
+      }
+
+      .burger.active .bar:nth-child(2){
+          opacity: 0;  
+      }
+      .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links{
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+  }
+
+
+  /* Laver en media til h1 (logo) */
+
+  @media(max-width:555px){
+    h1 {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        color: black;
+        font-weight: 700;
+        font-style: normal;
+        font-family: futura-pt, sans-serif;
+    }
+  }
+    
 /* CSS til instagram ikonet */
 
 .fa {
-  padding: 10px;
-  font-size: 10px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 5px 2px;
-}
+    padding: 10px;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
 
 /* hover effekt bliver lagt på */
 .fa:hover {

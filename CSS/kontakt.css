@@ -4,22 +4,24 @@
   box-sizing: border-box;
 }
 
+label,
+input,
+button {
+  display: block;
+}
+
 body {
   width: 100%;
   height: 100vh;
 }
-
 .container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   padding: 20px 100px;
-  z-index: -1;
 }
-
 .container::after {
   content: "";
   position: absolute;
@@ -116,6 +118,18 @@ button:hover {
   transform: scale(1.05);
 }
 
+.tak {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+  text-align: center;
+  padding: 9rem;
+  background: #ece1cb;
+  border-radius: 8px;
+  font-size: 6rem;
+}
+
 @media screen and (max-width: 600px) {
   .container_box {
     grid-template-columns: 1fr;
@@ -128,6 +142,18 @@ button:hover {
   .container {
     padding: 25px 30px;
   }
+
+  .tak {
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    margin-block: 3rem;
+    text-align: center;
+    padding: 8rem;
+    background: #ece1cb;
+    border-radius: 8px;
+    font-size: 2rem;
+  }
 }
 
 .fa {
@@ -138,4 +164,12 @@ button:hover {
   text-decoration: none;
   border-radius: 50%;
   margin: 5px 2px;
+}
+
+@media screen and (max-width: 300px) {
+  button:hover {
+    color: white;
+    background-color: #ece1cb;
+    transform: scale(1.05);
+  }
 }

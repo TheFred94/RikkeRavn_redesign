@@ -20,42 +20,32 @@
   <body>
     <header>
       <nav class="navbar">
-
         <div class="burger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        
+
         <div class="logo">
           <a href="index.html"><h1>Rikke Ravn Design</h1></a>
         </div>
-      
-      <nav>
 
-        
-        
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a href="om.html" class="nav-link"><h6>OM</h6></a>
-          </li>
-          <li class="nav-item">
-            <a href="showroom.html" class="nav-link"><h6>SHOWROOM</h6></a>
-          </li>
-          <li class="nav-item">
-            <a href="kontakt.html" class="nav-link"><h6><strong>KONTAKT</strong></h6></a>
-          </li>
-        </ul>
-
-        
-
-
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a href="om.html" class="nav-link"><h6>OM</h6></a>
+            </li>
+            <li class="nav-item">
+              <a href="showroom.html" class="nav-link"><h6>SHOWROOM</h6></a>
+            </li>
+            <li class="nav-item">
+              <a href="kontakt.html" class="nav-link"
+                ><h6><strong>KONTAKT</strong></h6></a
+              >
+            </li>
+          </ul>
+        </nav>
       </nav>
-      
-      
-      </nav>
-      
-
     </header>
 
     <main>
@@ -93,6 +83,7 @@
           }
         }
       </style>
+
       <section>
         <form action="tak.html" name="kontakt">
           <div class="container">
@@ -100,9 +91,19 @@
               <div class="left"></div>
               <div class="right">
                 <h2>Kontakt Mig</h2>
-                <input type="text" class="field" placeholder="Name" />
-                <input type="email" class="field" placeholder="Email" />
-                <input type="text" class="field" placeholder="Telefon" />
+
+                <label>
+                  <input placeholder="Navn" type="text" class="field" name="naven" required />
+                </label>
+
+                <label>
+                  <input placeholder="Email" type="email" class="field" name="email" required />
+                </label>
+
+                <label>
+                  <input placeholder="Telefon" type="text" class="field" name="telefon" required />
+                </label>
+
                 <textarea class="field area" placeholder="Besked"></textarea>
                 <button class="button">Send</button>
               </div>

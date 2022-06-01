@@ -1,47 +1,52 @@
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0 0 0.2rem 0;
-    box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 0 0.2rem 0;
+  box-sizing: border-box;
 }
 
 /* Font styling */
 p {
-    max-width: 60ch;
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  max-width: 60ch;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 h1 {
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    color: black;
-    font-weight: 700;
-    font-style: normal;
-    font-family: futura-pt, sans-serif;
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+  font-family: futura-pt, sans-serif;
 }
-h2{
-    font-family: futura-pt, sans-serif;
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    color: black;
-    font-weight: 700;
-    font-style: normal;
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
 }
 h3 {
-    font-family: futura-pt, sans-serif;
-    font-size: 18px;
-    letter-spacing: 0px;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0px;
 }
 
-h4{
-    font-size: 45px;
-    letter-spacing: 1.5px;
-    color: black;
-    font-weight: 700;
-    font-style: normal;
-    font-family: futura-pt, sans-serif;
+h4 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+  font-family: futura-pt, sans-serif;
 }
 
 h5 {
@@ -88,29 +93,23 @@ h6 {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   padding-top: 20px;
-
 }
 
 .logo:hover {
   color: #117cdf;
 }
 .logo a {
-
-    display: inline-block;
-    margin:0 auto;
-    text-align:center
-
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-
-
 .navbar {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-size: 0;
-    height: 150px;
-  }
-
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 0;
+  height: 150px;
+}
 
 /* Burger Menu */
 
@@ -172,28 +171,26 @@ h6 {
 /* Footer design */
 
 footer {
-  background: #948D85;
+  background: #948d85;
   text-align: center;
   align-self: end;
   display: grid;
-    grid-column: span 2;
-    height: 80px;
+  grid-column: span 2;
+  height: 80px;
 }
-
 
 .flex-row {
   display: flex;
   justify-content: space-evenly;
 }
 
-
 .footer-navn {
   display: flex;
   width: 75px;
   height: 30px;
-    transition: transform 500ms;
-    margin-top: 20px;
-    margin-left: 30px;
+  transition: transform 500ms;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .footer-insta {
   display: flex;
@@ -202,116 +199,115 @@ footer {
   transition: transform 500ms;
   margin-top: 20px;
 }
+.footer-insta:hover {
+  transform: scale(1.1);
+}
 
 .footer-telefon {
   display: flex;
   width: 115px;
-    height: 30px;
-    transition: transform 500ms;
-    margin-top: 20px;
+  height: 30px;
+  transition: transform 500ms;
+  margin-top: 20px;
 }
 
+/* Burger menu */
 
-  /* Burger menu */
+header {
+  background-color: white;
+}
 
-  header {
-      background-color: white;
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Styler selve burgeren */
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+/* Styler burger i mindre vindue */
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: auto;
+    left: 8px;
+    padding: 0;
+    border: 0;
+    min-width: 20px;
+    min-height: 20px;
+    background: 0 0;
+    overflow: visible;
+    z-index: 9;
   }
 
-
-  .burger{
-      display: none;
-      cursor: pointer;
-    
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Styler selve burgeren */
-
-  .bar {
-      display: block;
-      width: 25px;
-      height: 2px;
-      border-radius: 2px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background-color: black;
+  .nav-links {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
   }
 
-  /* Styler burger i mindre vindue */
-
-  @media(max-width:768px) {
-      .burger{
-        display: block;
-        position: absolute;
-        top: 12px;
-        right: auto;
-        left: 8px;
-        padding: 0;
-        border: 0;
-        min-width: 20px;
-        min-height: 20px;
-        background: 0 0;
-        overflow: visible;
-        z-index: 9;
-      }
-
-      .burger.active .bar:nth-child(2){
-          opacity: 0;  
-      }
-      .burger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .burger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-links{
-        display: flex;
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-item{
-        margin: 16px 0;
-    }
-
-    .nav-links.active{
-        left:0;
-    }
+  .nav-item {
+    margin: 16px 0;
   }
 
-
-  /* Laver en media til h1 (logo) */
-
-  @media(max-width:555px){
-    h1 {
-        font-size: 30px;
-        letter-spacing: 1.5px;
-        color: black;
-        font-weight: 700;
-        font-style: normal;
-        font-family: futura-pt, sans-serif;
-    }
+  .nav-links.active {
+    left: 0;
   }
-    
+}
+
+/* Laver en media til h1 (logo) */
+
+@media (max-width: 555px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    font-family: futura-pt, sans-serif;
+  }
+}
+
 /* CSS til instagram ikonet */
 
 .fa {
-    padding: 10px;
-    font-size: 10px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin: 5px 2px;
-  }
+  padding: 10px;
+  font-size: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px 2px;
+}
 
 /* hover effekt bliver lagt på */
 .fa:hover {
@@ -321,5 +317,5 @@ footer {
 /* Instagram */
 .fa-instagram {
   background: white;
-  color: #948D85;
+  color: #948d85;
 }

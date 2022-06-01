@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 .grid_3 {
@@ -10,6 +10,7 @@
 
 .grid_3_1 {
   display: grid;
+ 
 }
 .grid_3_2 {
     display: grid;
@@ -38,16 +39,15 @@ img {
     max-width: 100%;
     object-fit: cover;
     height: 100%;
+    transition: transform .5s ease;
 }
 
 
 
 
-  img {
-    transition: transform .5s ease;
-  }
 
-  .flex-col:hover img {
+
+.flex-col:hover img {
     transform: scale(1.1);
   }
 

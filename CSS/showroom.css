@@ -57,7 +57,7 @@ img {
 
 
 /* Iphone responsiv */
-@media(max-width:375px) {
+@media(max-width:376px) {
   .grid_3_1{
     display: none;
   }

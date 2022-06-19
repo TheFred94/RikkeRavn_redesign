@@ -132,27 +132,27 @@ h6 {
 }
 
 @media (max-width: 600px) {
-  .burger {
+  /* .burger {
     display: block;
-  }
+  } */
 
   /* Få den midterste block i burger menuen til at forsvinde */
 
-  .burger.active .bar:nth-child(2) {
+  /* .burger.active .bar:nth-child(2) {
     opacity: 0;
-  }
+  } */
 
   /* Få den øverste til at dreje sig, 
   så den og den nederste kan forme et kryds */
-  .burger.active .bar:nth-child(1) {
+  /* .burger.active .bar:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
   }
   .burger.active .bar:nth-child(3) {
     transform: translateY(8px) rotate(-45deg);
-  }
+  } */
   /* en fixed position gør at menuen bliver på skærmen idet man
    scroller ned, en left -100% gør at vi ikke kan se den */
-  .nav-links {
+  /* .nav-links {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -161,18 +161,18 @@ h6 {
     width: 100%;
     text-align: center;
     transition: 0.1s;
-  }
+  } */
 
   /* vi vil ikke have linksene tæt på hinanden */
 
-  .nav-links li {
+  /* .nav-links li {
     margin: 16px 0;
-  }
+  } */
 
-  .nav-links.active {
+  /* .nav-links.active {
     left: 0;
 
-  }
+  } */
 }
 
 /* Footer design */
@@ -263,7 +263,7 @@ header {
     opacity: 0;
   }
   .burger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
   .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);

@@ -138,14 +138,16 @@ h6 {
     opacity: 0;
   }
 
-  /* Få den øverste til at dreje sig, så den og den nederste kan forme et kryds */
+  /* Få den øverste til at dreje sig, 
+  så den og den nederste kan forme et kryds */
   .burger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
   .burger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(8px) rotate(-45deg);
   }
-  /* en fixed position gør at menuen bliver på skærmen idet man scroller ned, en left -100% gør at vi ikke kan se den */
+  /* en fixed position gør at menuen bliver på skærmen idet man
+   scroller ned, en left -100% gør at vi ikke kan se den */
   .nav-links {
     position: fixed;
     left: -100%;
@@ -165,6 +167,7 @@ h6 {
 
   .nav-links.active {
     left: 0;
+
   }
 }
 
